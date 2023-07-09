@@ -102,9 +102,11 @@ section#hero {
     margin: 0 auto;
 }
 
-h1, p {
+h1 {
     text-align: center;
     color: var(--accent-color);
+    font-size: 40px;
+    padding-top: 48px;
 }
 
 h2 {
@@ -117,6 +119,7 @@ h3, p {
 }
 
 h3 {
+    color: var(--text-color);
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -138,13 +141,23 @@ h3 {
     overflow: hidden;
 }
 
-.work-item a:hover .image-container img{
-    filter: brightness(100%);
-}
 
 .image-container {
     position: relative;
+    text-align: center;
+    color: var(--accent-color);
 }
+
+.image-container img {
+    border-radius: var(--border-radius);
+    
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
 
 .image-overlay {
     position: absolute;
@@ -152,9 +165,10 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(41, 143, 133, 0.5);
+    background-color: rgba(72, 78, 78, 0.5);
     opacity: 0;
     transition: opacity 0.3s ease;
+    border-radius: var(--border-radius);
 }
 
 .work-item a:hover .image-overlay {
@@ -166,6 +180,16 @@ h3 {
     height: auto;
     box-shadow: var(--box-shadow);
     transition: filter 0.3s ease;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
