@@ -6,7 +6,7 @@
     --text-color: #F0A360;
     --max-width: 800px;
     --border-radius: 10px;
-    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -36,7 +36,6 @@ nav ul {
 
 nav ul li {
     margin-right: 20px;
-    color: var(--text-color);
 }
 
 nav ul li a:hover {
@@ -44,6 +43,7 @@ nav ul li a:hover {
 }
 
 nav ul li a {
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -87,14 +87,29 @@ section {
     width: 80%;
 }
 
+section#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+
 .section-content {
     max-width: 600px;
     margin: 0 auto;
 }
 
-h1, h2, p {
+h1, p {
     text-align: center;
     color: var(--accent-color);
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color);
 }
 
 .work-item {
