@@ -112,6 +112,15 @@ h2 {
     color: var(--text-color);
 }
 
+h3, p {
+    color: var(--accent-color);
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 .work-item {
     display: flex;
     flex-direction: column;
@@ -120,10 +129,46 @@ h2 {
     margin-bottom: 20px;
 }
 
-.work-item img {
+.work-item a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.work-item a:hover .image-container img{
+    filter: brightness(100%);
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 143, 133, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.work-item a:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-container img {
     max-width: 100%;
     height: auto;
+    box-shadow: var(--box-shadow);
+    transition: filter 0.3s ease;
 }
+
+
 
 footer {
     background-color: var(--primary-color);
