@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #333333;
+    --secondary-color: #414141;
+    --background-color: #298F85;
+    --accent-color: #CFCFCF;
+    --text-color: #F0A360;
+    --max-width: 800px;
+    --border-radius: 10px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, var(--primary-color), var(--background-color), var(--accent-color));
+}
+
+header {
+    background: linear-gradient(to left, var(--secondary-color), var(--primary-color));
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    color: var(--primary-color);
+    box-shadow:var(--box-shadow);
+}
+
+.hero-image {
+    border-radius: 50%;
+    border: 8px solid var(--text-color);
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+section {
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.section-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+}
