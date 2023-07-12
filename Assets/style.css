@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to left, var(--secondary-color), var(--primary-color)); /* Makes the gradient background and uses CSS variables*/
+    background: linear-gradient(to left, var(--secondary-color), var(--primary-color)); /* Makes the gradient background and uses CSS variables */
     background-color: var(--primary-color);
     padding: 10px;
 }
@@ -63,12 +63,13 @@ section {
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    display: inline-block;
-    width: auto;
+    max-width: 600px;
 }
 
 .section-content {
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 #my-work .section-content {
@@ -109,7 +110,6 @@ h1, h2, h3, p {
     margin-bottom: 20px;
     position: relative;
     left: 50%;
-    transform: translateX(-50);
 }
 
 .hero .hero-image {
@@ -136,6 +136,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 600px;
     margin-bottom: 0;
 }
 
@@ -222,4 +223,4 @@ footer p {
 
 section:not(:last-child) {
     margin-bottom: 40px;
-}
+} 
