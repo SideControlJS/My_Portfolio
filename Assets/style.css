@@ -58,6 +58,12 @@ section#hero {
     justify-content: center;
 }
 
+article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 section {
     padding: 20px;
     background-color: var(--primary-color);
@@ -73,9 +79,10 @@ section {
 }
 
 #my-work .section-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1ft);
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 p {
@@ -89,17 +96,19 @@ h1, h2, h3, p {
     padding-left: 5px;
 }
 
-.hero {
+#hero {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 20px;
     padding: 50px 0;
     color: var(--primary-color);
     box-shadow: var(--box-shadow);
 }
+
 
 .hero-image {
     width: 200px;
@@ -107,12 +116,11 @@ h1, h2, h3, p {
     border-radius: 50%;
     border: 8px solid var(--text-color);
     object-fit: cover;
-    margin-bottom: 20px;
     position: relative;
     left: 50%;
 }
 
-.hero .hero-image {
+#hero .hero-image {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,19 +139,18 @@ h3 {
     color: var(--text-color);
 }
 
+
 .work-item {
     display: flex;
-    flex-direction: column;
+    ;
     align-items: center;
-    text-align: center;
     max-width: 600px;
     margin-bottom: 0;
 }
 
 .image-container {
     position: relative;
-    text-align: center;
-    color: var(--accent-color);
+    color: var(--accent-color)
 }
 
 .image-container img {
