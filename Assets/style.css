@@ -8,6 +8,7 @@
     --max-width: 800px;
     --border-radius: 10px;
     --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    --margin-bottom: 20px;
 }
 
 body {
@@ -25,6 +26,7 @@ header {
     padding: 10px;
 }
 
+/*Navigation Bar Styling*/
 nav ul {
     list-style: none;
     padding: 0;
@@ -47,68 +49,19 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-.hero, 
+
+/*Hero Section Styling*/
 section#hero {
     padding: 20px;
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    margin-bottom: 30px;
+    height: 400px;
+    margin-top: 40px;
+    margin-bottom: var(--margin-bottom);
     width: 80%;
-    justify-content: center;
-}
-
-article {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-section {
-    padding: 20px;
-    background-color: var(--primary-color);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    max-width: 600px;
-}
-
-.section-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-#my-work .section-content {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
-
-p {
-    font-size: 14px;
-}
-
-h1, h2, h3, p {
-    text-align: center;
-    color: var(--accent-color);
-    padding-top: 2px;
-    padding-left: 5px;
-}
-
-#hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-    padding: 50px 0;
-    color: var(--primary-color);
-    box-shadow: var(--box-shadow);
-}
-
 
 .hero-image {
     width: 200px;
@@ -127,38 +80,79 @@ h1, h2, h3, p {
     transform: translate(-50%, -50%);
 }
 
+section#hero h1 {
+    text-align: center;
+}
+
+/*Element Selectors*/
+article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+h3, p {
+    text-align: center;
+    color: var(--accent-color);
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
 h1 {
     font-size: 40px;
-    padding-top: 48px;
     color: var(--accent-color);
 }
 
-h3 {
+h2, h3 {
     margin-top: 10px;
     margin-bottom: 5px;
     color: var(--text-color);
 }
 
+h2 {
+    text-align: center;
+}
 
+section {
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    max-width: 600px;
+}
+
+/*About Me*/
+section#about-me {
+    margin-bottom: var(--margin-bottom);
+}
+
+
+/*"My Work" Styling*/
 .work-item {
     display: flex;
-    ;
     align-items: center;
     max-width: 600px;
     margin-bottom: 0;
 }
 
+.work-item a:hover .image-overlay {
+    opacity: 1;
+}
+
+/*Image Syling*/
 .image-container {
     position: relative;
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 .image-container img {
     border-radius: var(--border-radius);
     max-width: 100%;
     height: auto;
-    box-shadow: var(--box-shadow);
-    transition: 0.3s ease;  
+    box-shadow: var(--box-shadow);  
 }
 
 .bottom-right {
@@ -179,10 +173,6 @@ h3 {
     border-radius: var(--border-radius);
 }
 
-.work-item a:hover .image-overlay {
-    opacity: 1;
-}
-
 .text-block {
     display: flex;
     text-align: center;
@@ -194,6 +184,11 @@ h3 {
     padding-right: 20px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+}
+
+/*Contact Me Section*/
+section#contact-me {
+    margin-bottom: 20px;
 }
 
 footer {
@@ -228,6 +223,4 @@ footer p {
     }
 }
 
-section:not(:last-child) {
-    margin-bottom: 40px;
-} 
+ 
