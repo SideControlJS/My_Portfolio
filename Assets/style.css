@@ -60,7 +60,6 @@ section#hero {
     margin-top: 40px;
     margin-bottom: var(--margin-bottom);
     width: 80%;
-    justify-content: space-between;
 }
 
 .hero-image {
@@ -69,15 +68,16 @@ section#hero {
     border-radius: 50%;
     border: 8px solid var(--text-color);
     object-fit: cover;
-    position: relative;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #hero .hero-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
 }
 
 section#hero h1 {
@@ -189,6 +189,16 @@ section#about-me {
 /*Contact Me Section*/
 section#contact-me {
     margin-bottom: 20px;
+}
+
+section#contact-me a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section#contact-me a:hover {
+    color: var(--text-color);
 }
 
 footer {
