@@ -46,7 +46,7 @@ nav ul li a:hover {
 nav ul li a {
     color: var(--text-color);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /*This makes the color transition smoother*/
 }
 
 
@@ -218,7 +218,7 @@ footer p {
     margin: 0 auto;
 }
 
-/*Media Queries*/
+/*Media Queries for Screens*/
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 30px;
@@ -240,4 +240,26 @@ footer p {
     }
 }
 
+/*Media Queries for Mobile Devices*/
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/*This adjusts the spacing of the nav bar links to look better on mobile*/
+@media (max-width: 767px) { 
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
  
