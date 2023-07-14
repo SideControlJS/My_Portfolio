@@ -13,6 +13,8 @@ I built this webpage to start my portfolio for front-end web development. I have
 ![Screenshot 1](/Assets/Screenshot_wepbage.png)
 ![Screenshot 2](/Assets/Screenshot_webpage2.png)
 
+Screenshot of Mobile Friendly Functionality:
+![Screenshot 2](Assets/Screenshot_Mobile.png)
 
 ## Local Repo Screenshot
 
