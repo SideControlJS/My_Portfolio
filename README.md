@@ -2,7 +2,7 @@
 
 ## Description
 
-I built this webpage to start my portfolio for front-end web development. I have learned a lot about advanced CSS during this project. The purpose of this project is to add on as I learn and apply the skills I'm building to highlight my work.
+I built this webpage to start my portfolio for front-end web development. I have learned a lot about advanced CSS during this project. The purpose of this project is to add on as I learn and apply the skills I'm building to highlight my work. 
 
 ## Link to Deployed Page
 
@@ -28,3 +28,5 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
 https://flexbox.malven.co/
 https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+
+I used midjourney to create my avatar using midjourney AI. 
