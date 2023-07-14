@@ -6,7 +6,7 @@ I built this webpage to start my portfolio for front-end web development. I have
 
 ## Link to Deployed Page
 
-
+https://sidecontroljs.github.io/My_Portfolio/
 
 ## Screenshots of Deployed Webpage
 
